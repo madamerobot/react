@@ -1,22 +1,36 @@
 import React, { Component } from 'react';
 
 class Places extends Component {
+	
+	constructor() {
+		super();
+
+		this.state = {
+			showSpots: false
+		};
+	}
+
 	render() {
-
-	const data = this.props.Places;
-	console.log(data);
-
 	const spots = this._showSpots();
-
+	let spotList;
+	if (this.state.showSpots){
+		spotList = <li>{spots}</li>
+	}
 		return(
 			<div>
 				<h3>Amsterdam Zonnenplekken:</h3>
-				<button>Load summerspots</button>
+				<button onClick={this._handleClick.bind(this)}>Load summerspots</button>
 				<ul>
-					{spots}
+					{spotList}
 				</ul>
 			</div>
 		)
+	}
+
+	_handleClick() {
+		this.setState({
+			showSpots: !this.state.showSpots
+		});
 	}
 
 	_showSpots(){
