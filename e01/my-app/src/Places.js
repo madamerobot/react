@@ -20,7 +20,10 @@ class Places extends Component {
 	}
 
 	_showSpots(){
-		console.log("data: "+this.data);
+		
+		const data = this.props.Places;
+		console.log(data);
+
 		return data.map((data) => {
 			return (
 				<li key={data.id}>{data.properties.Naam_locatie}</li>
