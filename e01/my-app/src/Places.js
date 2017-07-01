@@ -13,13 +13,17 @@ class Places extends Component {
 	render() {
 	const spots = this._showSpots();
 	let spotList;
+
+	let buttonText = 'Load summerspots';
+
 	if (this.state.showSpots){
+		buttonText = 'Hide summerspots';
 		spotList = <li>{spots}</li>
 	}
 		return(
 			<div>
 				<h3>Amsterdam Zonnenplekken:</h3>
-				<button onClick={this._handleClick.bind(this)}>Load summerspots</button>
+				<button onClick={this._handleClick.bind(this)}>{buttonText}</button>
 				<ul>
 					{spotList}
 				</ul>
@@ -36,7 +40,6 @@ class Places extends Component {
 	_showSpots(){
 		
 		const data = this.props.Places;
-		console.log(data);
 
 		return data.map((data) => {
 			return (
