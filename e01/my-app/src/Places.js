@@ -18,15 +18,15 @@ class Places extends Component {
 
 	if (this.state.showSpots){
 		buttonText = 'Hide summerspots';
-		spotList = <li>{spots}</li>
+		spotList = <ul>{spots}</ul>
 	}
 		return(
 			<div>
 				<h3>Amsterdam Zonnenplekken:</h3>
 				<button onClick={this._handleClick.bind(this)}>{buttonText}</button>
-				<ul>
+				<p>
 					{spotList}
-				</ul>
+				</p>
 			</div>
 		)
 	}
