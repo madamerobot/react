@@ -1,0 +1,14 @@
+* {
+	font-family: Helvetica;
+	padding: 10px;
+}
+
+
+.tempinfo {
+	background-color: teal;
+	text-align: center;
+}
+
+.places {
+	background-color: dodgerblue;
+}
