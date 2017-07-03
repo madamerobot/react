@@ -8,7 +8,7 @@ class App extends Component {
 
 	constructor(props){		
 		super(props);
-		this.state = {temperature: '15'};
+		this.state = {temperature: '5'};
 	    this.handleChange = this.handleChange.bind(this);
 	}
 
