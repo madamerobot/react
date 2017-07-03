@@ -3,12 +3,21 @@
 	padding: 10px;
 }
 
+.row {
+	display: inline;
+	width: 100%;
+	overflow: auto;
+}
 
 .tempinfo {
 	background-color: teal;
 	text-align: center;
+	float: left;
+	width: 48%;
 }
 
 .places {
 	background-color: dodgerblue;
+	float: right;
+	width: 48%;
 }

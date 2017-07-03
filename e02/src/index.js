@@ -4,14 +4,9 @@ import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 
 //Custom imports
-import Tempinfo from './components/tempinfo';
-import Places from './components/places';
-import DATA from './sunspots_JSON';
-import './css/style.css';
+import App from './components/app'
 
-ReactDOM.render(<Tempinfo />, document.getElementById('tempinfo'));
+ReactDOM.render(<App/>, document.getElementById('app'));
 registerServiceWorker();
 
-ReactDOM.render(<Places Places={DATA} key={DATA.id} />, document.getElementById('places'));
-registerServiceWorker();
 
