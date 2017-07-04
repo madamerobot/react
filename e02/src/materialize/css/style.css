@@ -7,6 +7,14 @@ body {
 	font-family: Dual;
 	color: white;
 }
+
+.headline {
+	font-size: 70px;
+	font-family: Pacifico;
+	color: white;
+	text-align: center;
+}
+
 /*______FONTS_______*/
 
 @font-face {
@@ -58,18 +66,13 @@ body {
 	border-color: black;
 	height: 30%;
 	margin-bottom: 20px;
-	background-color: black;
+/*	background-color: black;*/
 }
 
 /*______PLACES LIST______*/
 
-.headline {
-	font-size: 70px;
-	font-family: Pacifico;
-	color: white;
-}
-
 .placeslist {
+	margin-top: 50px;
 	font-family: Dual;
 	text-align: center;
 	font-size: 22px;

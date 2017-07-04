@@ -8,9 +8,6 @@ class Places extends Component {
 		
 		return (
 			<div>
-				<div>
-					<h3 className="headline"><span role="img">🍦</span>Your summer spots<span role="img">🍦</span></h3>
-				</div>
 				<div>{spotList}</div>
 			</div>
 		);
