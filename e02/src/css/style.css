@@ -1,6 +1,18 @@
+@font-face {
+	font-family: Dual;
+	src: url(./fonts/Dual-300.otf);
+}
+
+
 * {
 	font-family: Helvetica;
 	padding: 10px;
+	text-align: center;
+}
+
+.degrees {
+	font-family: Dual;
+	font-size: 80px;
 }
 
 .row {

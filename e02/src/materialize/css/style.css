@@ -1,0 +1,69 @@
+/*h1 {
+	font-size: 7.2rem;
+}
+*/
+
+body {
+	background-image: linear-gradient(-90deg, #36A0C9, #17E8C2);
+}
+
+@font-face {
+	font-family: Dual;
+	src: url(../fonts/Dual-300.otf);
+}
+
+@font-face {
+	font-family: Municipal;
+	src: url(../fonts/Municipal.ttf);
+}
+
+@font-face {
+	font-family: Pacifico;
+	src: url(../fonts/Pacifico.ttf);
+}
+
+
+.headline {
+
+	font-size: 70px;
+	font-family: Pacifico;
+	color: white;
+}
+
+.degrees {
+
+	font-family: Dual;
+	font-size: 6rem;
+	color: grey;
+}
+
+.degreebox {
+
+	text-align: center;
+	font-size: 100%;
+	background-color: white;
+	margin-top: 133px;
+	border-style: solid;
+	border-color: grey;
+	box-shadow: 10px -10px teal;
+}
+
+.placeslist {
+
+	font-family: Dual;
+	text-align: center;
+	font-size: 22px;
+
+}
+
+.temperaturedetail {
+
+	padding-top: 150px;
+	padding-bottom: 150px;
+
+}
+
+.placesdetail {
+	background-color: pink;
+/*	padding: 2px;*/
+}

@@ -15,9 +15,8 @@ class Tempinfo extends Component {
 	
 	render(){
 		return(
-			<div>
-				<h2>It is</h2>
-				<h1>{this.props.temperature}°C</h1>
+			<div className="temperaturedetail">
+				<span className="degrees">{this.props.temperature}°C</span>
 					<input type="range" min="0" max="45" value={this.props.temperature} onChange={this.handleChange}/>
 			</div>
 		);

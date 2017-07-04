@@ -8,8 +8,10 @@ class Places extends Component {
 		
 		return (
 			<div>
-				<h3>These are your summer spots:</h3>
-				<ul>{spotList}</ul>
+				<p>
+					<h3 className="headline">🍦Your summer spots🍦</h3>
+				</p>
+				<p>{spotList}</p>
 			</div>
 		);
 	}
@@ -21,7 +23,9 @@ class Places extends Component {
 
 		return newList.map((places) => {
 			return (
-			<li key={places.id}>{places.properties.Naam_locatie}</li>
+			<div className="placesdetail">
+				<p key={places.id}>{places.properties.Naam_locatie}</p>
+			</div>
 			);
 		});
 	}

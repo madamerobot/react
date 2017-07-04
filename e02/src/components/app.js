@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Places from './places';
 import Tempinfo from './tempinfo';
 import DATA from '../sunspots_JSON';
-import '../css/style.css';
+import '../materialize/css/materialize.css';
+import '../materialize/css/style.css';
 
 class App extends Component {
 
@@ -19,11 +20,19 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<div className="tempinfo">
+				<div className="row">
+				</div>
+				<div className="col s1">
+				</div>
+				<div className="range col s3 degreebox">
 					<Tempinfo temperature={this.state.temperature} onChange={this.handleChange} />
 				</div>
-				<div className="places">
+				<div className="col s1">
+				</div>
+				<div className="col s6 placeslist">
 					<Places Places={DATA} temperature={this.state.temperature} />
+				</div>
+					<div className="col s1">
 				</div>
 			</div>
 		)
