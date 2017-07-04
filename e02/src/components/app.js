@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Places from './places';
-import Tempinfo from './tempinfo';
+import Tempbubble from './tempbubble';
+import Tempslider from './tempslider';
 import DATA from '../sunspots_JSON';
 import '../materialize/css/materialize.css';
 import '../materialize/css/style.css';
@@ -19,22 +20,24 @@ class App extends Component {
 
 	render() {
 		return (
-			<div>
 				<div className="row">
+
+					<div className="col s1"></div>
+
+					<div className="range col s3 degreebox">
+						<Tempbubble temperature={this.state.temperature} onChange={this.handleChange} />
+						<Tempslider temperature={this.state.temperature} onChange={this.handleChange} />
+					</div>
+					
+					<div className="col s1"></div>					
+		
+					<div className="col s6 placeslist">
+						<Places Places={DATA} temperature={this.state.temperature} />
+					</div>
+
+					<div className="col s1"></div>
+
 				</div>
-				<div className="col s1">
-				</div>
-				<div className="range col s3 degreebox">
-					<Tempinfo temperature={this.state.temperature} onChange={this.handleChange} />
-				</div>
-				<div className="col s1">
-				</div>
-				<div className="col s6 placeslist">
-					<Places Places={DATA} temperature={this.state.temperature} />
-				</div>
-					<div className="col s1">
-				</div>
-			</div>
 		)
 	}
 
